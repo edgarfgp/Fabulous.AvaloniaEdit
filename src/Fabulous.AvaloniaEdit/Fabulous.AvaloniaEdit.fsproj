@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="TextEditor.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia.AvaloniaEdit" Version="11.0.6" />
+      <PackageReference Include="Fabulous" Version="2.4.1" />
+      <PackageReference Include="Fabulous.Avalonia" Version="2.3.0" />
+    </ItemGroup>
+
+</Project>
