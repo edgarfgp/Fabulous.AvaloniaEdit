@@ -22,9 +22,8 @@ module TextEditor =
         Attributes.defineAvaloniaPropertyWithEquality TextEditor.OptionsProperty
 
     let TextChanged =
-        Attributes.defineRoutedEvent "TextEditor_TextChanged" TextEditor.TextInputEvent
-    // (fun target ->
-    //     let textEditor = (target :?> TextEditor).TextChanged)
+        Attributes.defineEvent<TextInputEventArgs> "TextChanged" (fun target ->
+            (target :?> TextEditor).TextArea.TextEntered)
 
     let FontFamily =
         Attributes.defineAvaloniaPropertyWithEquality TextEditor.FontFamilyProperty
